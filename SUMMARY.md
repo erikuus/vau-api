@@ -1,0 +1,48 @@
+# Table of contents
+
+* [Sissejuhatus](README.md)
+* [Juurdepääsutaotlus](juurdepaeaesutaotlus.md)
+* [Juurdepääsukood](juurdepaeaesukood.md)
+* [Juuraadress](juuraadress.md)
+* [Kiirjuhend](kiirjuhend.md)
+
+## PÄRINGUD
+
+* [Kasutaja](paeringud/kasutaja.md)
+* [Taotlus](paeringud/taotlus/README.md)
+  * [Testimine](paeringud/taotlus/testimine.md)
+  * [Taotluse loomine](paeringud/taotlus/taotluse-loomine.md)
+  * [Taotluse muutmine](paeringud/taotlus/taotluse-muutmine.md)
+  * [Taotluse saatmine](paeringud/taotlus/taotluse-saatmine.md)
+  * [Taotluse vaatamine](paeringud/taotlus/taotluse-vaatamine.md)
+  * [Taotluse oleku vaatamine](paeringud/taotlus/taotluse-oleku-vaatamine.md)
+  * [Taotluse vastuse vaatamine](paeringud/taotlus/taotluse-vastuse-vaatamine.md)
+  * [Taotluste sirvimine](paeringud/taotlus/taotluste-sirvimine.md)
+  * [Taotluse kustutamine](paeringud/taotlus/taotluse-kustutamine.md)
+* [Manus](paeringud/manus/README.md)
+  * [Testimine](paeringud/manus/testimine.md)
+  * [Faili lisamine](paeringud/manus/faili-lisamine.md)
+  * [Failinime muutmine](paeringud/manus/failinime-muutmine.md)
+  * [Failide vaatamine](paeringud/manus/failide-vaatamine.md)
+  * [Faili kustutamine](paeringud/manus/faili-kustutamine.md)
+* [Töötaja](paeringud/toeoetaja/README.md)
+  * [Testimine](paeringud/toeoetaja/testimine.md)
+  * [Töötaja loomine](paeringud/toeoetaja/toeoetaja-loomine.md)
+  * [Töötaja muutmine](paeringud/toeoetaja/toeoetaja-muutmine.md)
+  * [Töötaja vaatamine](paeringud/toeoetaja/toeoetaja-vaatamine.md)
+  * [Töötajate sirvimine](paeringud/toeoetaja/toeoetajate-sirvimine.md)
+  * [Töötaja leidmine](paeringud/toeoetaja/toeoetaja-leidmine.md)
+  * [Töötaja kustutamine](paeringud/toeoetaja/toeoetaja-kustutamine.md)
+* [Üksus](paeringud/ueksus/README.md)
+  * [Testimine](paeringud/ueksus/testimine.md)
+  * [Üksuse loomine](paeringud/ueksus/ueksuse-loomine.md)
+  * [Üksuse muutmine](paeringud/ueksus/ueksuse-muutmine.md)
+  * [Üksuse vaatamine](paeringud/ueksus/ueksuse-vaatamine.md)
+  * [Üksuste sirvimine](paeringud/ueksus/ueksuste-sirvimine.md)
+  * [Üksuse leidmine](paeringud/ueksus/ueksuse-leidmine.md)
+  * [Üksuse kustutamine](paeringud/ueksus/ueksuse-kustutamine.md)
+
+## Abivahendid
+
+* [Postman](abivahendid/postman.md)
+* [Koodinäide](abivahendid/koodinaeide.md)
