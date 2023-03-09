@@ -1,27 +1,27 @@
 ---
-description: Konkreetsed näited, kuidas kasutada API põhifunktsioone
+description: Konkreetsed näited, kuidas kasutada API SKA mooduli põhifunktsioone
 ---
 
 # Kiirjuhend
 
 {% hint style="info" %}
-See kiirjuhend seletab näidete varal API põhilisi funktsioone. Me ei süvene siin detailidesse ega kommenteeri päringute kõiki parameetreid, kuna need on põhjalikult dokumenteeritud järgnevatel lehekülgedel. Siin me loome kiirelt uue üksuse ja lisame sinna uue töötaja. Seejärel loome selle töötaja nimel uue taotluse, lisame sellele faili ja saadame taotluse Rahvusarhiivi. Me pärime, mis olekus on taotluse menetlemine, ja küsime taotluse detailvaate. Lõpuks pärime me taotluse vastuse. Kõige selle juures vaatame me paralleelselt, kuidas need tegevused kajastuvad veebirakenduse kasutajaliideses.
+See kiirjuhend seletab näidete varal API mooduli põhilisi funktsioone. Me ei süvene siin detailidesse ega kommenteeri päringute kõiki parameetreid, kuna need on põhjalikult dokumenteeritud järgnevatel lehekülgedel. Siin me loome kiirelt uue üksuse ja lisame sinna uue töötaja. Seejärel loome selle töötaja nimel uue taotluse, lisame sellele faili ja saadame taotluse Rahvusarhiivi. Me pärime, mis olekus on taotluse menetlemine, ja küsime taotluse detailvaate. Lõpuks pärime me taotluse vastuse. Kõige selle juures vaatame me paralleelselt, kuidas need tegevused kajastuvad veebirakenduse kasutajaliideses.
 {% endhint %}
 
 {% hint style="info" %}
-Siin ja edaspidi, kui räägitakse "veebirakendusest", peetakse silmas Rahvusarhiivi loodud ja Rahvusarhiivi domeenis asuvat rakendust https://www.ra.ee/eteatis/, mida Sotsiaalkindlustusameti töötajad on saanud kasutada alates 2013. aastast, et taotleda Rahvusarhiivilt e-arhiiviteatisi. Sellest rakendusest on pikemalt juttu sissejuhatuses.
+Siin ja edaspidi, kui räägitakse "veebirakendusest", peetakse silmas Rahvusarhiivi loodud ja Rahvusarhiivi domeenis asuvat rakendust https://www.ra.ee/eteatis/, mida Sotsiaalkindlustusameti töötajad on saanud kasutada alates 2013. aastast, et taotleda Rahvusarhiivilt e-arhiiviteatisi. Sellest rakendusest on pikemalt juttu mooduli sissejuhatuses.
 {% endhint %}
 
 ## Ettevalmistus
 
 Alustamiseks peab esiteks omama Rahvusarhiivi kasutajakontot, millele administraator on andnud õiguse kasutada e-arhiiviteatise API-moodulit. Teiseks peab teadma muutuja \{{apiBaseUrl\}} väärtust ehk API juuraadressi. &#x20;
 
-{% content-ref url="juurdepaeaesutaotlus.md" %}
-[juurdepaeaesutaotlus.md](juurdepaeaesutaotlus.md)
+{% content-ref url="../juurdepaeaesutaotlus.md" %}
+[juurdepaeaesutaotlus.md](../juurdepaeaesutaotlus.md)
 {% endcontent-ref %}
 
-{% content-ref url="juuraadress.md" %}
-[juuraadress.md](juuraadress.md)
+{% content-ref url="../juuraadress.md" %}
+[juuraadress.md](../juuraadress.md)
 {% endcontent-ref %}
 
 Selles kiirjuhendis on kasutatud kontot, mille kasutajanimi on "erik" ja API testkeskkonda, mille juuraadess on "https://www.ra.ee/vautest/index.php/api".
@@ -85,7 +85,7 @@ Päringu vastuseks on JSON:
 
 Veebirakenduse näeb loodud osakond välja nii:
 
-![](<.gitbook/assets/E-arhiiviteatis-Halda-üksusi (1).png>)
+![](<../.gitbook/assets/E-arhiiviteatis-Halda-üksusi (1).png>)
 
 ## Töötaja loomine
 
@@ -115,7 +115,7 @@ Päringu vastuseks on JSON:
 
 Veebirakenduse näeb loodud töötaja välja nii:
 
-![](<.gitbook/assets/E-arhiiviteatis-Halda-töötajaid (1).png>)
+![](<../.gitbook/assets/E-arhiiviteatis-Halda-töötajaid (1).png>)
 
 ## Taotluse loomine
 
@@ -189,7 +189,7 @@ Päringu vastuseks on JSON:
 
 Veebirakenduse näeb loodud taotlus välja nii:
 
-![](<.gitbook/assets/E-arhiiviteatis-Vaata-taotlust (4).png>)
+![](<../.gitbook/assets/E-arhiiviteatis-Vaata-taotlust (4).png>)
 
 {% hint style="info" %}
 Pane tähele, et ülaltoodud näites on mitmete väljade väärtuseks pandud väljade nimed. Seda on tehtud ainult seepärast, et näite koostamine oleks lihtsam. Samal põhjusel on dokumentatsiooni autor märkinud nii taotleja kui töötaja andmeteks oma isikuandmed.
@@ -220,7 +220,7 @@ Päringu vastuseks on JSON:
 
 Veebirakenduses näeb lisatud fail välja nii:
 
-![](<.gitbook/assets/E-arhiiviteatis-Vaata-taotlust (1).png>)
+![](<../.gitbook/assets/E-arhiiviteatis-Vaata-taotlust (1).png>)
 
 ## Taotluse saatmine
 
@@ -242,7 +242,7 @@ Päringu vastuseks on JSON:
 
 Taotlus ilmub Rahvusarhiivi arhiivipäringute haldamise moodulisse:
 
-![](.gitbook/assets/VAU-Halda-päringuid.png)
+![](../.gitbook/assets/VAU-Halda-päringuid.png)
 
 ## Oleku pärimine
 
@@ -384,7 +384,7 @@ Päringu vastuseks on JSON:
 
 Veebirakenduses näeb saadetud taotlus välja nii:
 
-![](<.gitbook/assets/E-arhiiviteatis-Vaata-taotlust (2).png>)
+![](<../.gitbook/assets/E-arhiiviteatis-Vaata-taotlust (2).png>)
 
 ## Vastuse pärimine
 

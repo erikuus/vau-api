@@ -4,43 +4,59 @@
 * [Juurdepääsutaotlus](juurdepaeaesutaotlus.md)
 * [Juurdepääsukood](juurdepaeaesukood.md)
 * [Juuraadress](juuraadress.md)
-* [Kiirjuhend](kiirjuhend.md)
 
-## PÄRINGUD
+## Üldised päringud
 
-* [Kasutaja](paeringud/kasutaja.md)
-* [Taotlus](paeringud/taotlus/README.md)
-  * [Testimine](paeringud/taotlus/testimine.md)
-  * [Taotluse loomine](paeringud/taotlus/taotluse-loomine.md)
-  * [Taotluse muutmine](paeringud/taotlus/taotluse-muutmine.md)
-  * [Taotluse saatmine](paeringud/taotlus/taotluse-saatmine.md)
-  * [Taotluse vaatamine](paeringud/taotlus/taotluse-vaatamine.md)
-  * [Taotluse oleku vaatamine](paeringud/taotlus/taotluse-oleku-vaatamine.md)
-  * [Taotluse vastuse vaatamine](paeringud/taotlus/taotluse-vastuse-vaatamine.md)
-  * [Taotluste sirvimine](paeringud/taotlus/taotluste-sirvimine.md)
-  * [Taotluse kustutamine](paeringud/taotlus/taotluse-kustutamine.md)
-* [Manus](paeringud/manus/README.md)
-  * [Testimine](paeringud/manus/testimine.md)
-  * [Faili lisamine](paeringud/manus/faili-lisamine.md)
-  * [Failinime muutmine](paeringud/manus/failinime-muutmine.md)
-  * [Failide vaatamine](paeringud/manus/failide-vaatamine.md)
-  * [Faili kustutamine](paeringud/manus/faili-kustutamine.md)
-* [Töötaja](paeringud/toeoetaja/README.md)
-  * [Testimine](paeringud/toeoetaja/testimine.md)
-  * [Töötaja loomine](paeringud/toeoetaja/toeoetaja-loomine.md)
-  * [Töötaja muutmine](paeringud/toeoetaja/toeoetaja-muutmine.md)
-  * [Töötaja vaatamine](paeringud/toeoetaja/toeoetaja-vaatamine.md)
-  * [Töötajate sirvimine](paeringud/toeoetaja/toeoetajate-sirvimine.md)
-  * [Töötaja leidmine](paeringud/toeoetaja/toeoetaja-leidmine.md)
-  * [Töötaja kustutamine](paeringud/toeoetaja/toeoetaja-kustutamine.md)
-* [Üksus](paeringud/ueksus/README.md)
-  * [Testimine](paeringud/ueksus/testimine.md)
-  * [Üksuse loomine](paeringud/ueksus/ueksuse-loomine.md)
-  * [Üksuse muutmine](paeringud/ueksus/ueksuse-muutmine.md)
-  * [Üksuse vaatamine](paeringud/ueksus/ueksuse-vaatamine.md)
-  * [Üksuste sirvimine](paeringud/ueksus/ueksuste-sirvimine.md)
-  * [Üksuse leidmine](paeringud/ueksus/ueksuse-leidmine.md)
-  * [Üksuse kustutamine](paeringud/ueksus/ueksuse-kustutamine.md)
+* [Kasutaja](ueldised-paeringud/kasutaja.md)
+
+## SKA moodul
+
+* [Sissejuhatus](ska-moodul/sissejuhatus.md)
+* [Kiirjuhend](ska-moodul/kiirjuhend.md)
+
+## SKA mooduli päringud
+
+* [Taotlus](ska-mooduli-paeringud/taotlus/README.md)
+  * [Testimine](ska-mooduli-paeringud/taotlus/testimine.md)
+  * [Taotluse loomine](ska-mooduli-paeringud/taotlus/taotluse-loomine.md)
+  * [Taotluse muutmine](ska-mooduli-paeringud/taotlus/taotluse-muutmine.md)
+  * [Taotluse saatmine](ska-mooduli-paeringud/taotlus/taotluse-saatmine.md)
+  * [Taotluse vaatamine](ska-mooduli-paeringud/taotlus/taotluse-vaatamine.md)
+  * [Taotluse oleku vaatamine](ska-mooduli-paeringud/taotlus/taotluse-oleku-vaatamine.md)
+  * [Taotluse vastuse vaatamine](ska-mooduli-paeringud/taotlus/taotluse-vastuse-vaatamine.md)
+  * [Taotluste sirvimine](ska-mooduli-paeringud/taotlus/taotluste-sirvimine.md)
+  * [Taotluse kustutamine](ska-mooduli-paeringud/taotlus/taotluse-kustutamine.md)
+* [Manus](ska-mooduli-paeringud/manus/README.md)
+  * [Testimine](ska-mooduli-paeringud/manus/testimine.md)
+  * [Faili lisamine](ska-mooduli-paeringud/manus/faili-lisamine.md)
+  * [Failinime muutmine](ska-mooduli-paeringud/manus/failinime-muutmine.md)
+  * [Failide vaatamine](ska-mooduli-paeringud/manus/failide-vaatamine.md)
+  * [Faili kustutamine](ska-mooduli-paeringud/manus/faili-kustutamine.md)
+* [Töötaja](ska-mooduli-paeringud/toeoetaja/README.md)
+  * [Testimine](ska-mooduli-paeringud/toeoetaja/testimine.md)
+  * [Töötaja loomine](ska-mooduli-paeringud/toeoetaja/toeoetaja-loomine.md)
+  * [Töötaja muutmine](ska-mooduli-paeringud/toeoetaja/toeoetaja-muutmine.md)
+  * [Töötaja vaatamine](ska-mooduli-paeringud/toeoetaja/toeoetaja-vaatamine.md)
+  * [Töötajate sirvimine](ska-mooduli-paeringud/toeoetaja/toeoetajate-sirvimine.md)
+  * [Töötaja leidmine](ska-mooduli-paeringud/toeoetaja/toeoetaja-leidmine.md)
+  * [Töötaja kustutamine](ska-mooduli-paeringud/toeoetaja/toeoetaja-kustutamine.md)
+* [Üksus](ska-mooduli-paeringud/ueksus/README.md)
+  * [Testimine](ska-mooduli-paeringud/ueksus/testimine.md)
+  * [Üksuse loomine](ska-mooduli-paeringud/ueksus/ueksuse-loomine.md)
+  * [Üksuse muutmine](ska-mooduli-paeringud/ueksus/ueksuse-muutmine.md)
+  * [Üksuse vaatamine](ska-mooduli-paeringud/ueksus/ueksuse-vaatamine.md)
+  * [Üksuste sirvimine](ska-mooduli-paeringud/ueksus/ueksuste-sirvimine.md)
+  * [Üksuse leidmine](ska-mooduli-paeringud/ueksus/ueksuse-leidmine.md)
+  * [Üksuse kustutamine](ska-mooduli-paeringud/ueksus/ueksuse-kustutamine.md)
+
+## RA moodul
+
+* [Sissejuhatus](ra-moodul/sissejuhatus.md)
+* [Kiirjuhend](ra-moodul/kiirjuhend.md)
+
+## RA mooduli päringud
+
+* [Klassifikaatorid](ra-mooduli-paeringud/klassifikaatorid.md)
 
 ## Abivahendid
 

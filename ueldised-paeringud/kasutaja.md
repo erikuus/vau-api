@@ -1,5 +1,5 @@
 ---
-description: Päringute dokumentatsioon
+description: Kasutaja tuvastamine ja juurdepääsukoodi väljastamine
 ---
 
 # Kasutaja

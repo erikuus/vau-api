@@ -175,7 +175,7 @@ class Api
 
 ```
 
-## Kasutusnäide
+## SKA mooduli kasutusnäide
 
 Kasutades baasklassi, loome uue üksuse, vaatame selle andmeid, muudame neid, vaatame muudetud andmeid, pärime üksuse ID, kustutame üksuse ja vaatame kõiki üksusi, mis jäid alles pärast uue üksuse kustutamist.
 
