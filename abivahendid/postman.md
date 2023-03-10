@@ -10,9 +10,11 @@ Kollektsiooni jagamine toimub _Via JSON Link_. Pärast kollektsioonile ligipää
 
 <figure><img src="../.gitbook/assets/api-enviroment.png" alt=""><figcaption></figcaption></figure>
 
-Muutujate `username` ja `password` __ kohta loe siit [juurdepaeaesutaotlus.md](../juurdepaeaesutaotlus.md "mention")
+Muutujaid `username` ja `password` __ kasutab SKA mooduli kaustas olev [user/verify](../ueldised-paeringud/kasutaja.md).
 
-Muutujad `username2` ja `password2` on vajalikud ainult testide jaoks (nimelt sellel kasutajal puudub e-arhiiviteatise taotlemise API kasutusõigus) ja nende väärtused saadetakse koos jagamise lingiga.
+Muutujaid `username2` ja `password2` kasutab RA mooduli kaustas olev [user/verify](../ueldised-paeringud/kasutaja.md).
+
+Niisiis kui[ VAU administraator andis su kasutajale ligipääsu](../juurdepaeaesutaotlus.md) RA moodulile, pead sa oma kasutajanime ja salasõna lisama `username2` ja `password2` väärtuseks.
 
 Kollektsiooni kasutamisel tuleb esimese asjana jooksutada [`user/verify`](../ueldised-paeringud/kasutaja.md) päringut ja kopeerida vastusest `accessToken` väärtus keskkonna samanimelise muutuja väärtuseks. Kui _token_ aegub, tuleb seda tegevust korrata.
 

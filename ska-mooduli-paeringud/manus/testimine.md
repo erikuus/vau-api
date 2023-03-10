@@ -41,6 +41,6 @@ Päringute grupp ei ole serveri sisemise vea tõttu kättesaadav.
 {
     "responseStatus": "error",
     "errorCode": 500,
-    "errorMessage": "FileController do not have a method \"test\"."
+    "errorMessage": "FileController does not have a method \"test\"."
 }
 ```

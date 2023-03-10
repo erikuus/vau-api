@@ -4,13 +4,13 @@ description: Päringu dokumentatsioon
 
 # Testimine
 
-## <mark style="color:green;">GET</mark> ska/employee/test
+## <mark style="color:green;">GET</mark> ra/lookup/test
 
 ```
-{{apiBaseUrl}}/ska/employee/test?token={{accessToken}}
+{{apiBaseUrl}}/ra/lookup/test?token={{accessToken}}
 ```
 
-Testib, kas töötajat puudutav päringute grupp on kättesaadav. Normaaljuhul pole see vajalik, aga kui mingil tehnilisel põhjusel töötajat puudutav päringute grupp muutub kättesaamatuks, näiteks annavad kõik päringud vastuseks Internal Server Error, saab selle päringu kaudu tuvastada, millal päringud muutuvad jälle kättesaadavaks.
+Testib, kas klassifikaatoreid puudutav päringute grupp on kättesaadav. Normaaljuhul pole see vajalik, aga kui mingil tehnilisel põhjusel klassifikaatoreid puudutav päringute grupp muutub kättesaamatuks, näiteks annavad kõik päringud vastuseks Internal Server Error, saab selle päringu kaudu tuvastada, millal päringud muutuvad jälle kättesaadavaks.
 
 ### Parameetrid (query params)
 
@@ -22,7 +22,7 @@ Testib, kas töötajat puudutav päringute grupp on kättesaadav. Normaaljuhul p
 
 {% code overflow="wrap" %}
 ```shell
-curl --location --request GET 'https://www.ra.ee/vau/index.php/api/ska/employee/test?token=bd266e2a556dc5331917d86252262c30' \
+curl --location --request GET 'https://www.ra.ee/vau/index.php/api/ra/lookup/test?token=bd266e2a556dc5331917d86252262c30' \
 ```
 {% endcode %}
 
@@ -44,6 +44,6 @@ Päringute grupp ei ole serveri sisemise vea tõttu kättesaadav.
 {
     "responseStatus": "error",
     "errorCode": 500,
-    "errorMessage": "EmployeeController does not have a method \"test\"."
+    "errorMessage": "LookupController does not have a method \"test\"."
 }
 ```

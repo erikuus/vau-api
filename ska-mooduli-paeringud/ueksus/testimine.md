@@ -44,6 +44,7 @@ Päringute grupp ei ole serveri sisemise vea tõttu kättesaadav.
 {
     "responseStatus": "error",
     "errorCode": 500,
-    "errorMessage": "DepartmentController do not have a method \"test\"."
+    "errorMessage": "DepartmentController does not have a method \"test\"."
 }
 ```
+

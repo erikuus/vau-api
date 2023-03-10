@@ -56,7 +56,8 @@
 
 ## RA mooduli päringud
 
-* [Klassifikaatorid](ra-mooduli-paeringud/klassifikaatorid.md)
+* [Klassifikaatorid](ra-mooduli-paeringud/klassifikaatorid/README.md)
+  * [Testimine](ra-mooduli-paeringud/klassifikaatorid/testimine.md)
 
 ## Abivahendid
 
