@@ -4,13 +4,13 @@ description: Päringu dokumentatsioon
 
 # Testimine
 
-## <mark style="color:green;">GET</mark> ra/lookup/test
+## <mark style="color:green;">GET</mark> ra/price/test
 
 ```
-{{apiBaseUrl}}/ra/lookup/test?token={{accessToken}}
+{{apiBaseUrl}}/ra/price/test?token={{accessToken}}
 ```
 
-Testib, kas klassifikaatoreid puudutav päringute grupp on kättesaadav. Normaaljuhul pole see vajalik, aga kui mingil tehnilisel põhjusel klassifikaatoreid puudutav päringute grupp muutub kättesaamatuks, näiteks annavad kõik päringud vastuseks Internal Server Error, saab selle päringu kaudu tuvastada, millal päringud muutuvad jälle kättesaadavaks.
+Testib, kas hinnakirja puudutav päringute grupp on kättesaadav. Normaaljuhul pole see vajalik, aga kui mingil tehnilisel põhjusel hinnakirja puudutav päringute grupp muutub kättesaamatuks, näiteks annavad kõik päringud vastuseks Internal Server Error, saab selle päringu kaudu tuvastada, millal päringud muutuvad jälle kättesaadavaks.
 
 ### Parameetrid (query params)
 
@@ -23,7 +23,7 @@ Testib, kas klassifikaatoreid puudutav päringute grupp on kättesaadav. Normaal
 {% code overflow="wrap" %}
 ```shell
 curl --location --request 
-GET 'https://www.ra.ee/vau/index.php/api/ra/lookup/test?token=bd266e2a556dc5331917d86252262c30' \
+GET 'https://www.ra.ee/vau/index.php/api/ra/price/test?token=bd266e2a556dc5331917d86252262c30' \
 ```
 {% endcode %}
 
@@ -45,6 +45,6 @@ Päringute grupp ei ole serveri sisemise vea tõttu kättesaadav.
 {
     "responseStatus": "error",
     "errorCode": 500,
-    "errorMessage": "LookupController does not have a method \"test\"."
+    "errorMessage": "PriceController does not have a method \"test\"."
 }
 ```

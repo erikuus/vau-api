@@ -49,6 +49,10 @@
   * [Testimine](ra-moodul/klassifikaatorid/testimine.md)
   * [Klassifikaatorite sirvimine](ra-moodul/klassifikaatorid/klassifikaatorite-sirvimine.md)
   * [Klassifikaatori vaatamine](ra-moodul/klassifikaatorid/klassifikaatori-vaatamine.md)
+* [Hinnakiri](ra-moodul/hinnakiri/README.md)
+  * [Testimine](ra-moodul/hinnakiri/testimine.md)
+  * [Hindade sirvimine](ra-moodul/hinnakiri/hindade-sirvimine.md)
+  * [Hinna vaatamine](ra-moodul/hinnakiri/hinna-vaatamine.md)
 
 ## Abivahendid
 

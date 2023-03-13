@@ -13,7 +13,7 @@ description: Päringu dokumentatsioon
 ```
 {% endcode %}
 
-Väljastab klassifikaatorite nimekirja tüübi alusel. Väljastatakse kõik määratud tüüpi klassifikaatorid. Klassifikaatorid on järjestatud järjekorranumbri (`position`) järgi, mille on määranud VAU haldurid.
+Väljastab klassifikaatorite nimekirja tüübi alusel. Väljastatakse kõik määratud tüüpi klassifikaatorid. Klassifikaatorid on järjestatud kasvavalt (ASC) järjekorranumbri (position) järgi, mille on määranud VAU haldurid.
 
 ### Parameetrid (query params)
 
@@ -25,7 +25,8 @@ Väljastab klassifikaatorite nimekirja tüübi alusel. Väljastatakse kõik mä�
 
 {% code overflow="wrap" %}
 ```shell
-curl --location --request GET 'https://www.ra.ee/vau/index.php/api/ra/lookup/list?token=9c7ac26ae69ba392be82c2315d3c45e3&type=purpose' \
+curl --location --request 
+GET 'https://www.ra.ee/vau/index.php/api/ra/lookup/list?token=9c7ac26ae69ba392be82c2315d3c45e3&type=purpose' \
 ```
 {% endcode %}
 

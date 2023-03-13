@@ -24,7 +24,8 @@ Väljastab klassifikaatori andmed koodi alusel.
 
 {% code overflow="wrap" %}
 ```shell
-curl --location --request GET 'https://www.ra.ee/vau/index.php/api/ra/lookup/view?token=9c7ac26ae69ba392be82c2315d3c45e3&type=purpose&code=1' \
+curl --location --request 
+GET 'https://www.ra.ee/vau/index.php/api/ra/lookup/view?token=9c7ac26ae69ba392be82c2315d3c45e3&type=purpose&code=1' \
 ```
 {% endcode %}
 
