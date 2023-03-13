@@ -10,13 +10,13 @@ Kollektsiooni jagamine toimub _Via JSON Link_. Pärast kollektsioonile ligipää
 
 <figure><img src="../.gitbook/assets/api-enviroment.png" alt=""><figcaption></figcaption></figure>
 
-Muutujaid `username` ja `password` __ kasutab SKA mooduli kaustas olev [user/verify](../ueldised-paeringud/kasutaja.md).
+Muutujaid `username` ja `password` __ kasutab SKA mooduli kaustas olev [user/verify](../kasutaja-tuvastamine.md).
 
-Muutujaid `username2` ja `password2` kasutab RA mooduli kaustas olev [user/verify](../ueldised-paeringud/kasutaja.md).
+Muutujaid `username2` ja `password2` kasutab RA mooduli kaustas olev [user/verify](../kasutaja-tuvastamine.md).
 
 Niisiis kui[ VAU administraator andis su kasutajale ligipääsu](../juurdepaeaesutaotlus.md) RA moodulile, pead sa oma kasutajanime ja salasõna lisama `username2` ja `password2` väärtuseks.
 
-Kollektsiooni kasutamisel tuleb esimese asjana jooksutada [`user/verify`](../ueldised-paeringud/kasutaja.md) päringut ja kopeerida vastusest `accessToken` väärtus keskkonna samanimelise muutuja väärtuseks. Kui _token_ aegub, tuleb seda tegevust korrata.
+Kollektsiooni kasutamisel tuleb esimese asjana jooksutada [`user/verify`](../kasutaja-tuvastamine.md) päringut ja kopeerida vastusest `accessToken` väärtus keskkonna samanimelise muutuja väärtuseks. Kui _token_ aegub, tuleb seda tegevust korrata.
 
 {% hint style="info" %}
 Päringute gruppe saab käivitada suvalises järjekorras, aga grupi sees tuleks päringuid käivitada järjest. Näiteks SKA mooduli`application/create`enne ja`application/update` pärast ja`application/delete`kõige lõpus. Siis ei ole vaja päringutes identifikaatoreid käsitsi muuta. Taotluse loomise päring omistab tagastatud uue taotluse ID väärtuse muutujale, mida järgnevad päringud kasutavad.

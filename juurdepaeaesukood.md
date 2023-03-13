@@ -16,7 +16,7 @@ kus _token_ on _"_71e0d98f1ab52c225d655359190b6844".
 
 ## Kuidas seda saada?
 
-_Tokeni_ väljastab päring [`user/verify`](ueldised-paeringud/kasutaja.md), mis kontrollib kasutajanime ja salasõna järgi, kas kasutaja on olemas. ****&#x20;
+_Tokeni_ väljastab päring [`user/verify`](kasutaja-tuvastamine.md), mis kontrollib kasutajanime ja salasõna järgi, kas kasutaja on olemas. ****&#x20;
 
 ## Kui kaua see kehtib?
 
