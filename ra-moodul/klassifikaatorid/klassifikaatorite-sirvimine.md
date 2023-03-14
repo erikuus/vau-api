@@ -8,7 +8,6 @@ description: Päringu dokumentatsioon
 
 {% code overflow="wrap" %}
 ```
-
 {{apiBaseUrl}}/ra/lookup/list?token={{accessToken}}&type={{lookupType}}
 ```
 {% endcode %}

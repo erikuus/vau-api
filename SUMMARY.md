@@ -53,6 +53,12 @@
   * [Testimine](ra-moodul/hinnakiri/testimine.md)
   * [Hindade sirvimine](ra-moodul/hinnakiri/hindade-sirvimine.md)
   * [Hinna vaatamine](ra-moodul/hinnakiri/hinna-vaatamine.md)
+* [Arhiiviüksus](ra-moodul/arhiiviueksus/README.md)
+  * [Testimine](ra-moodul/arhiiviueksus/testimine.md)
+  * [Üksuste sirvimine](ra-moodul/arhiiviueksus/ueksuste-sirvimine.md)
+* [Teenus](ra-moodul/teenus/README.md)
+  * [Testimine](ra-moodul/teenus/testimine.md)
+  * [Teenuste sirvimine](ra-moodul/teenus/teenuste-sirvimine.md)
 
 ## Abivahendid
 
