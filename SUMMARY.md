@@ -56,6 +56,7 @@
 * [Arhiiviüksus](ra-moodul/arhiiviueksus/README.md)
   * [Testimine](ra-moodul/arhiiviueksus/testimine.md)
   * [Üksuste sirvimine](ra-moodul/arhiiviueksus/ueksuste-sirvimine.md)
+  * [Üksuse vaatamine](ra-moodul/arhiiviueksus/ueksuse-vaatamine.md)
 * [Teenus](ra-moodul/teenus/README.md)
   * [Testimine](ra-moodul/teenus/testimine.md)
   * [Teenuste sirvimine](ra-moodul/teenus/teenuste-sirvimine.md)
@@ -63,4 +64,7 @@
 ## Abivahendid
 
 * [Postman](abivahendid/postman.md)
-* [Koodinäide](abivahendid/koodinaeide.md)
+* [Baasklass](abivahendid/baasklass.md)
+* [Kasutusnäited](abivahendid/kasutusnaeited/README.md)
+  * [SKA mooduli kasutusnäide](abivahendid/kasutusnaeited/ska-mooduli-kasutusnaeide.md)
+  * [RA mooduli kasutusnäide](abivahendid/kasutusnaeited/ra-mooduli-kasutusnaeide.md)
