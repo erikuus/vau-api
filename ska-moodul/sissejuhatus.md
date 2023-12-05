@@ -14,9 +14,9 @@ Veebirakendus on selles mõttes autonoomne, et selle kasutajad (SKA töötajad) 
 
 **Veebirakenduse ekraanivaated**
 
-<div>
+<div align="left">
 
-<figure><img src="../.gitbook/assets/E-arhiiviteatis-Uus-taotlus (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/E-arhiiviteatis-Uus-taotlus (1).png" alt=""><figcaption></figcaption></figure>
 
  
 
@@ -28,7 +28,7 @@ Veebirakendus on selles mõttes autonoomne, et selle kasutajad (SKA töötajad) 
 
  
 
-<figure><img src="../.gitbook/assets/E-arhiiviteatis-Halda-üksusi.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/E-arhiiviteatis-Halda-üksusi (1).png" alt=""><figcaption></figcaption></figure>
 
  
 

@@ -16,7 +16,7 @@ Väljastab üksuse identifikaatori üksuse nime alusel.&#x20;
 
 \*-ga märgitud on kohustuslikud
 
-<table><thead><tr><th>NIMI</th><th>TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr><tr><td>name</td><td>String</td><td>Üksuse nimi (tõstutundetu)</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="156">NIMI</th><th width="147">TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr><tr><td>name</td><td>String</td><td>Üksuse nimi (tõstutundetu)</td><td></td></tr></tbody></table>
 
 ### Päringu näide (cUrl)
 

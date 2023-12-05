@@ -17,7 +17,7 @@ Saadab taotluse Rahvusarhiivi. Saadetud taotlus ilmub Rahvusarhiivi arhiivipäri
 
 \*-ga märgitud on kohustuslikud
 
-<table><thead><tr><th>NIMI</th><th>TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr><tr><td>id *</td><td>Integer</td><td>Taotluse identifikaator<br><br><em>NB! Taotluse identifikaatori saamise kohta vaata</em> <a data-mention href="taotluse-loomine.md">taotluse-loomine.md</a><em></em></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="116">NIMI</th><th width="94">TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr><tr><td>id *</td><td>Integer</td><td>Taotluse identifikaator<br><br><em>NB! Taotluse identifikaatori saamise kohta vaata</em> <a data-mention href="taotluse-loomine.md">taotluse-loomine.md</a></td><td></td></tr></tbody></table>
 
 ### Päringu näide (cUrl)
 
@@ -80,5 +80,5 @@ Taotluse saatmine Rahvusarhiivi õnnestub.
 ```
 
 {% hint style="info" %}
-Pane tähele, et neis näidetes "responseStatus" on "error", aga vastuse "HTTP response status code" on "200 __ OK".&#x20;
+Pane tähele, et neis näidetes "responseStatus" on "error", aga vastuse "HTTP response status code" on "200 OK".&#x20;
 {% endhint %}

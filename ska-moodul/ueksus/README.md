@@ -4,7 +4,7 @@ description: Päringute dokumentatsioon
 
 # Üksus
 
-E-arhiiviteatise **** taotlusel **** tuleb kahes kohas määrata Sotsiaalkindlustusameti üksus:
+E-arhiiviteatise taotlusel tuleb kahes kohas määrata Sotsiaalkindlustusameti üksus:
 
 * Juhul kui teatise tellijaks ja riigilõivu tasujaks ei ole isik, vaid Sotsiaalkindlustusameti üksus, tuleb taotlust luues määrata, milline üksus.
 * Iga taotluse puhul tuleb määrata üksus, kuhu arhiiviteatis meilitsi edastatakse.

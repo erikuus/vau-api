@@ -18,7 +18,7 @@ Väljastab taotluse identifikaatori järgi sellele taotlusele lisatud failide ni
 
 \*-ga märgitud on kohustuslikud
 
-<table><thead><tr><th>NIMI</th><th>TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr><tr><td>application_id</td><td>Integer</td><td>Taotluse identifikaator, mille faile vaadatakse<br><br><em>NB! Taotluse identifikaatori saamise kohta vaata</em> <a data-mention href="../taotlus/taotluse-loomine.md">taotluse-loomine.md</a></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="168">NIMI</th><th width="107">TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr><tr><td>application_id</td><td>Integer</td><td>Taotluse identifikaator, mille faile vaadatakse<br><br><em>NB! Taotluse identifikaatori saamise kohta vaata</em> <a data-mention href="../taotlus/taotluse-loomine.md">taotluse-loomine.md</a></td><td></td></tr></tbody></table>
 
 ### Päringu näide (cUrl)
 

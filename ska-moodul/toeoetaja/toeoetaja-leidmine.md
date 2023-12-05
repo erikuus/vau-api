@@ -16,7 +16,7 @@ Väljastab töötaja identifikaatori töötaja e-posti aadressi alusel.&#x20;
 
 \*-ga märgitud on kohustuslikud
 
-<table><thead><tr><th>NIMI</th><th>TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr><tr><td>email</td><td>String</td><td>Töötaja e-posti aadress (tõstutundetu)</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="152">NIMI</th><th width="156">TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr><tr><td>email</td><td>String</td><td>Töötaja e-posti aadress (tõstutundetu)</td><td></td></tr></tbody></table>
 
 ### Päringu näide (cUrl)
 

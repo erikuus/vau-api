@@ -10,7 +10,7 @@ Kollektsiooni jagamine toimub _Via JSON Link_. Pärast kollektsioonile ligipää
 
 <figure><img src="../.gitbook/assets/api-enviroment.png" alt=""><figcaption></figcaption></figure>
 
-Muutujaid `username` ja `password` __ kasutab SKA mooduli kaustas olev [user/verify](../kasutaja-tuvastamine.md).
+Muutujaid `username` ja `password` kasutab SKA mooduli kaustas olev [user/verify](../kasutaja-tuvastamine.md).
 
 Muutujaid `username2` ja `password2` kasutab RA mooduli kaustas olev [user/verify](../kasutaja-tuvastamine.md).
 

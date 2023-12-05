@@ -16,13 +16,13 @@ Lisab taotlusele uue faili, tagastab selle identifikaatori ja allalaadimise ling
 
 \*-ga märgitud on kohustuslikud
 
-<table><thead><tr><th>NIMI</th><th>TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="248">NIMI</th><th>TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr></tbody></table>
 
 ### Sisend (body raw json)
 
 \*-ga märgitud on kohustuslikud
 
-<table><thead><tr><th>NIMI</th><th>TÜÜP (PIKKUS)</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>application_id *</td><td>Integer</td><td>Taotluse identifikaator, millele fail lisatakse<br><br><em>NB! Taotluse identifikaatori saamise kohta vaata</em> <a data-mention href="../taotlus/taotluse-loomine.md">taotluse-loomine.md</a><em></em></td><td></td></tr><tr><td>employee_id *</td><td>Integer</td><td>Töötaja identifikaator, kes faili lisab<br><br><em>NB! Töötaja identifikaatori saamise kohta vaata</em> <a data-mention href="../toeoetaja/toeoetaja-loomine.md">toeoetaja-loomine.md</a> <em>ja</em> <a data-mention href="../toeoetaja/toeoetaja-leidmine.md">toeoetaja-leidmine.md</a><em></em></td><td></td></tr><tr><td>file_name *</td><td>String (256)</td><td>Failinimi, mis võib sisaldada ainult täppideta tähti, numbreid ja sidekriipsu. Lubatud on järgmised failinime laiendused: bdoc, ddoc, asice, pdf, jpeg, jpg, png</td><td></td></tr><tr><td>file_content *</td><td>String</td><td>Base64 kodeeringus faili sisu, mille maksimaalne lubatud suurus on 6 MB</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="174">NIMI</th><th width="155">TÜÜP (PIKKUS)</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>application_id *</td><td>Integer</td><td>Taotluse identifikaator, millele fail lisatakse<br><br><em>NB! Taotluse identifikaatori saamise kohta vaata</em> <a data-mention href="../taotlus/taotluse-loomine.md">taotluse-loomine.md</a></td><td></td></tr><tr><td>employee_id *</td><td>Integer</td><td>Töötaja identifikaator, kes faili lisab<br><br><em>NB! Töötaja identifikaatori saamise kohta vaata</em> <a data-mention href="../toeoetaja/toeoetaja-loomine.md">toeoetaja-loomine.md</a> <em>ja</em> <a data-mention href="../toeoetaja/toeoetaja-leidmine.md">toeoetaja-leidmine.md</a></td><td></td></tr><tr><td>file_name *</td><td>String (256)</td><td>Failinimi, mis võib sisaldada ainult täppideta tähti, numbreid ja sidekriipsu. Lubatud on järgmised failinime laiendused: bdoc, ddoc, asice, pdf, jpeg, jpg, png</td><td></td></tr><tr><td>file_content *</td><td>String</td><td>Base64 kodeeringus faili sisu, mille maksimaalne lubatud suurus on 6 MB</td><td></td></tr></tbody></table>
 
 ### Päringu näide (cUrl)
 
@@ -127,5 +127,5 @@ Faili üleslaadimine ja taotlusele lisamine õnnestub, tagastatakse üleslaaditu
 ```
 
 {% hint style="info" %}
-Pane tähele, et neis näidetes "responseStatus" on "error", aga vastuse "HTTP response status code" on "200 __ OK".&#x20;
+Pane tähele, et neis näidetes "responseStatus" on "error", aga vastuse "HTTP response status code" on "200 OK".&#x20;
 {% endhint %}

@@ -18,7 +18,7 @@ Väljastab klassifikaatorite nimekirja tüübi alusel. Väljastatakse kõik mä�
 
 \*-ga märgitud on kohustuslikud
 
-<table><thead><tr><th>NIMI</th><th>TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr><tr><td>type *</td><td>String </td><td><p>Klassifikaatori tüüp </p><p></p><p>Võimalikud väärtused on: <code>purpose</code> või <code>measure_unit</code></p></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="197">NIMI</th><th width="152">TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr><tr><td>type *</td><td>String </td><td><p>Klassifikaatori tüüp </p><p></p><p>Võimalikud väärtused on: <code>purpose</code> või <code>measure_unit</code></p></td><td></td></tr></tbody></table>
 
 ### Päringu näide (cUrl)
 

@@ -85,7 +85,7 @@ Päringu vastuseks on JSON:
 
 Veebirakenduse näeb loodud osakond välja nii:
 
-![](<../.gitbook/assets/E-arhiiviteatis-Halda-üksusi (1).png>)
+![](../.gitbook/assets/E-arhiiviteatis-Halda-üksusi.png)
 
 ## Töötaja loomine
 
@@ -189,7 +189,7 @@ Päringu vastuseks on JSON:
 
 Veebirakenduse näeb loodud taotlus välja nii:
 
-![](<../.gitbook/assets/E-arhiiviteatis-Vaata-taotlust (4).png>)
+![](<../.gitbook/assets/E-arhiiviteatis-Vaata-taotlust (1).png>)
 
 {% hint style="info" %}
 Pane tähele, et ülaltoodud näites on mitmete väljade väärtuseks pandud väljade nimed. Seda on tehtud ainult seepärast, et näite koostamine oleks lihtsam. Samal põhjusel on dokumentatsiooni autor märkinud nii taotleja kui töötaja andmeteks oma isikuandmed.
@@ -220,7 +220,7 @@ Päringu vastuseks on JSON:
 
 Veebirakenduses näeb lisatud fail välja nii:
 
-![](<../.gitbook/assets/E-arhiiviteatis-Vaata-taotlust (1).png>)
+![](<../.gitbook/assets/E-arhiiviteatis-Vaata-taotlust (1) (1).png>)
 
 ## Taotluse saatmine
 

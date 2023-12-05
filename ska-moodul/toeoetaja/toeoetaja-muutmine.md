@@ -16,13 +16,13 @@ Muudab töötaja andmeid identifikaatori alusel.
 
 \*-ga märgitud on kohustuslikud
 
-<table><thead><tr><th>NIMI</th><th>TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr><tr><td>id *</td><td>Integer</td><td>Töötaja identifikaator<br><br><em>NB! Töötaja identifikaatori saamise kohta vaata</em> <a data-mention href="toeoetaja-loomine.md">toeoetaja-loomine.md</a> <em>ja</em> <a data-mention href="toeoetaja-leidmine.md">toeoetaja-leidmine.md</a><em></em></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="155">NIMI</th><th width="94">TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr><tr><td>id *</td><td>Integer</td><td>Töötaja identifikaator<br><br><em>NB! Töötaja identifikaatori saamise kohta vaata</em> <a data-mention href="toeoetaja-loomine.md">toeoetaja-loomine.md</a> <em>ja</em> <a data-mention href="toeoetaja-leidmine.md">toeoetaja-leidmine.md</a></td><td></td></tr></tbody></table>
 
 ### Sisend (body raw json)
 
 \*-ga märgitud on kohustuslikud
 
-<table><thead><tr><th>NIMI</th><th>TÜÜP (PIKKUS)</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>firstname *</td><td>String (128)</td><td>Töötaja eesnimi</td><td></td></tr><tr><td>lastname *</td><td>String (128)</td><td>Töötaja perekonnanimi</td><td></td></tr><tr><td>email *</td><td>String (128)</td><td>Töötaja e-posti aadress</td><td></td></tr><tr><td>phone *</td><td>String (16)</td><td>Töötaja telefoninumber</td><td></td></tr><tr><td>department_id *</td><td>Integer</td><td>Üksuse identifikaator, kuhu töötaja kuulub<br><br><em>NB! Üksuse identifikaatori saamise kohta vaata</em> <a data-mention href="../ueksus/ueksuse-loomine.md">ueksuse-loomine.md</a><em>ja</em> <a data-mention href="../ueksus/ueksuse-leidmine.md">ueksuse-leidmine.md</a></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="195">NIMI</th><th width="163">TÜÜP (PIKKUS)</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>firstname *</td><td>String (128)</td><td>Töötaja eesnimi</td><td></td></tr><tr><td>lastname *</td><td>String (128)</td><td>Töötaja perekonnanimi</td><td></td></tr><tr><td>email *</td><td>String (128)</td><td>Töötaja e-posti aadress</td><td></td></tr><tr><td>phone *</td><td>String (16)</td><td>Töötaja telefoninumber</td><td></td></tr><tr><td>department_id *</td><td>Integer</td><td>Üksuse identifikaator, kuhu töötaja kuulub<br><br><em>NB! Üksuse identifikaatori saamise kohta vaata</em> <a data-mention href="../ueksus/ueksuse-loomine.md">ueksuse-loomine.md</a><em>ja</em> <a data-mention href="../ueksus/ueksuse-leidmine.md">ueksuse-leidmine.md</a></td><td></td></tr></tbody></table>
 
 ### Päringu näide (cUrl)
 
@@ -104,5 +104,5 @@ Töötaja muutmine õnnestub.
 ```
 
 {% hint style="info" %}
-Pane tähele, et neis näidetes "responseStatus" on "error", aga vastuse "HTTP response status code" on "200 __ OK".&#x20;
+Pane tähele, et neis näidetes "responseStatus" on "error", aga vastuse "HTTP response status code" on "200 OK".&#x20;
 {% endhint %}

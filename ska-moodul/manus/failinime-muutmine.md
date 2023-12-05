@@ -16,13 +16,13 @@ Muudab failinime identifikaatori alusel.
 
 \*-ga märgitud on kohustuslikud
 
-<table><thead><tr><th>NIMI</th><th>TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr><tr><td>id *</td><td>Integer</td><td>Faili identifikaator<br><br><em>NB! Faili identifikaatori saamise kohta vaata</em> <a data-mention href="faili-lisamine.md">faili-lisamine.md</a></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="133">NIMI</th><th width="132">TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr><tr><td>id *</td><td>Integer</td><td>Faili identifikaator<br><br><em>NB! Faili identifikaatori saamise kohta vaata</em> <a data-mention href="faili-lisamine.md">faili-lisamine.md</a></td><td></td></tr></tbody></table>
 
 ### Sisend (body raw json)
 
 \*-ga märgitud on kohustuslikud
 
-<table><thead><tr><th>NIMI</th><th>TÜÜP (PIKKUS)</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>employee_id *</td><td>Integer</td><td>Töötaja identifikaator, kes failinime muudab<br><br><em>NB! Töötaja identifikaatori saamise kohta vaata</em> <a data-mention href="../toeoetaja/toeoetaja-loomine.md">toeoetaja-loomine.md</a> <em>ja</em> <a data-mention href="../toeoetaja/toeoetaja-leidmine.md">toeoetaja-leidmine.md</a><em></em></td><td></td></tr><tr><td>file_name *</td><td>String (256)</td><td>Failinimi, mis võib sisaldada ainult täppideta tähti, numbreid ja sidekriipsu. Lubatud on järgmised failinime laiendused: bdoc, ddoc, asice, pdf, jpeg, jpg, png</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="174">NIMI</th><th width="155">TÜÜP (PIKKUS)</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>employee_id *</td><td>Integer</td><td>Töötaja identifikaator, kes failinime muudab<br><br><em>NB! Töötaja identifikaatori saamise kohta vaata</em> <a data-mention href="../toeoetaja/toeoetaja-loomine.md">toeoetaja-loomine.md</a> <em>ja</em> <a data-mention href="../toeoetaja/toeoetaja-leidmine.md">toeoetaja-leidmine.md</a></td><td></td></tr><tr><td>file_name *</td><td>String (256)</td><td>Failinimi, mis võib sisaldada ainult täppideta tähti, numbreid ja sidekriipsu. Lubatud on järgmised failinime laiendused: bdoc, ddoc, asice, pdf, jpeg, jpg, png</td><td></td></tr></tbody></table>
 
 ### Päringu näide (cUrl)
 
@@ -98,5 +98,5 @@ Failinime muutmine õnnestub.
 ```
 
 {% hint style="info" %}
-Pane tähele, et neis näidetes "responseStatus" on "error", aga vastuse "HTTP response status code" on "200 __ OK".&#x20;
+Pane tähele, et neis näidetes "responseStatus" on "error", aga vastuse "HTTP response status code" on "200 OK".&#x20;
 {% endhint %}

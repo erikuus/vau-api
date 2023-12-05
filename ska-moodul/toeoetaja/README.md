@@ -4,7 +4,7 @@ description: Päringute dokumentatsioon
 
 # Töötaja
 
-E-arhiiviteatise **** taotluse loomisel **** tuleb määrata, milline Sotsiaalkindlustusameti töötaja selle koostas. Taotluse koostanud töötaja kontaktandmeid kuvatakse taotluse detailvaate juures. Kui Rahvusarhiivi töötajal, kes taotlust menetleb, tekib küsimusi taotluse andmete kohta, saab ta kontaktandmete alusel võtta ühendust Sotsiaalkindlustusameti töötajaga.
+E-arhiiviteatise taotluse loomisel tuleb määrata, milline Sotsiaalkindlustusameti töötaja selle koostas. Taotluse koostanud töötaja kontaktandmeid kuvatakse taotluse detailvaate juures. Kui Rahvusarhiivi töötajal, kes taotlust menetleb, tekib küsimusi taotluse andmete kohta, saab ta kontaktandmete alusel võtta ühendust Sotsiaalkindlustusameti töötajaga.
 
 Samuti tuleb manuse lisamisel taotlusele määrata, milline töötaja selle lisas.
 

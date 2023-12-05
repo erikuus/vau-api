@@ -18,7 +18,7 @@ Väljastab arhiiviüksuse andmed koodi (lühinime) alusel.
 
 \*-ga märgitud on kohustuslikud
 
-<table><thead><tr><th>NIMI</th><th>TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr><tr><td>code *</td><td>String</td><td>Arhiiviüksuse kood ehk lühinimi<br><br><em>Koodi ehk lühinime saamise kohta vaata</em> <a href="../../ska-moodul/ueksus/ueksuste-sirvimine.md#vastuse-naeide"><em>siit</em></a><em></em></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="123">NIMI</th><th width="106">TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr><tr><td>code *</td><td>String</td><td>Arhiiviüksuse kood ehk lühinimi<br><br><em>Koodi ehk lühinime saamise kohta vaata</em> <a href="../../ska-moodul/ueksus/ueksuste-sirvimine.md#vastuse-naeide"><em>siit</em></a></td><td></td></tr></tbody></table>
 
 ### Päringu näide (cUrl)
 

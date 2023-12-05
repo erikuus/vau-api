@@ -24,7 +24,7 @@ Päringute tehniline dokumentatsiooni on hoomatavam, kui vaadata paralleelselt, 
 
  
 
-<figure><img src="../../.gitbook/assets/E-arhiiviteatis-Uus-taotlus (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/E-arhiiviteatis-Uus-taotlus (1) (1).png" alt=""><figcaption></figcaption></figure>
 
  
 

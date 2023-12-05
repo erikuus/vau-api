@@ -16,13 +16,13 @@ Loob uue üksuse ja tagastab selle identifikaatori.
 
 \*-ga märgitud on kohustuslikud
 
-<table><thead><tr><th>NIMI</th><th>TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="143">NIMI</th><th width="151">TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr></tbody></table>
 
 ### Sisend (body raw json)
 
 \*-ga märgitud on kohustuslikud
 
-<table><thead><tr><th>NIMI</th><th>TÜÜP (PIKKUS)</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>name *</td><td>String (256)</td><td>Üksuse nimi</td><td></td></tr><tr><td>address *</td><td>String (256)</td><td>Üksuse aadress</td><td></td></tr><tr><td>zip *</td><td>String (16)</td><td>Üksuse postiindeks</td><td></td></tr><tr><td>email *</td><td>String (128)</td><td>Üksuse e-posti aadress</td><td></td></tr><tr><td>phone *</td><td>String (16)</td><td>Üksuse telefoninumber</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="175">NIMI</th><th width="186">TÜÜP (PIKKUS)</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>name *</td><td>String (256)</td><td>Üksuse nimi</td><td></td></tr><tr><td>address *</td><td>String (256)</td><td>Üksuse aadress</td><td></td></tr><tr><td>zip *</td><td>String (16)</td><td>Üksuse postiindeks</td><td></td></tr><tr><td>email *</td><td>String (128)</td><td>Üksuse e-posti aadress</td><td></td></tr><tr><td>phone *</td><td>String (16)</td><td>Üksuse telefoninumber</td><td></td></tr></tbody></table>
 
 ### Päringu näide (cUrl)
 
@@ -92,5 +92,5 @@ Uue üksuse loomine õnnestub ja tagastatakse loodud üksuse identifikaator.
 ```
 
 {% hint style="info" %}
-Pane tähele, et neis näidetes "responseStatus" on "error", aga vastuse "HTTP response status code" on "200 __ OK".&#x20;
+Pane tähele, et neis näidetes "responseStatus" on "error", aga vastuse "HTTP response status code" on "200 OK".&#x20;
 {% endhint %}

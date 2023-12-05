@@ -18,7 +18,7 @@ Väljastab hinnakirja rea identifikaatori alusel.
 
 \*-ga märgitud on kohustuslikud
 
-<table><thead><tr><th>NIMI</th><th>TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr><tr><td>id *</td><td>Integer</td><td>Hinnakirja rea identifikaator<br><br><em>Identifikaatori saamise kohta vaata</em> <a href="hindade-sirvimine.md#paeringu-naeide-curl"><em>siit</em></a><em></em></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="123">NIMI</th><th width="106">TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr><tr><td>id *</td><td>Integer</td><td>Hinnakirja rea identifikaator<br><br><em>Identifikaatori saamise kohta vaata</em> <a href="hindade-sirvimine.md#paeringu-naeide-curl"><em>siit</em></a></td><td></td></tr></tbody></table>
 
 ### Päringu näide (cUrl)
 

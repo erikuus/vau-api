@@ -2,7 +2,7 @@
 description: Kasutaja tuvastamine ja juurdepääsukoodi väljastamine
 ---
 
-# Kasutaja
+# Kasutaja tuvastamine
 
 ## <mark style="color:orange;">POST</mark> user/verify
 
@@ -16,9 +16,9 @@ Kõigile päringutele tuleb ühe parameetrina lisada juurde ajutiselt kehtiv juu
 
 \*-ga märgitud on kohustuslikud
 
-<table><thead><tr><th>NIMI</th><th>TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>username *</td><td>String</td><td>Rahvusarhiivis registreeritud kasutajanimi</td><td></td></tr><tr><td>password *</td><td>String</td><td>Rahvusarhiivis registreeritud salasõna</td><td></td></tr></tbody></table>
+<table><thead><tr><th>NIMI</th><th width="249">TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>username *</td><td>String</td><td>Rahvusarhiivis registreeritud kasutajanimi</td><td></td></tr><tr><td>password *</td><td>String</td><td>Rahvusarhiivis registreeritud salasõna</td><td></td></tr></tbody></table>
 
-Kasutajanime ja salasõna saamise kohta vaata [juurdepaeaesutaotlus.md](../juurdepaeaesutaotlus.md "mention")
+Kasutajanime ja salasõna saamise kohta vaata [juurdepaeaesutaotlus.md](juurdepaeaesutaotlus.md "mention")
 
 ### Päringu näide (cUrl)
 
@@ -32,7 +32,7 @@ curl --location --request POST 'https://www.ra.ee/vau/index.php/api/user/verify'
 
 ### Vastuse näide
 
-Kasutaja autentimine õnnestub ja väljastatakse ajutine [juurdepaeaesukood.md](../juurdepaeaesukood.md "mention")
+Kasutaja autentimine õnnestub ja väljastatakse ajutine [juurdepaeaesukood.md](juurdepaeaesukood.md "mention")
 
 ```json
 {
@@ -97,5 +97,5 @@ Seda tuleb mõista nii, et token "c7234cb8fd247d668062c55a6b1c4be2" kehtib 3600 
 ```
 
 {% hint style="info" %}
-Pane tähele, et neis näidetes "responseStatus" on "error", aga vastuse "HTTP response status code" on "200 __ OK".&#x20;
+Pane tähele, et neis näidetes "responseStatus" on "error", aga vastuse "HTTP response status code" on "200 OK".&#x20;
 {% endhint %}
