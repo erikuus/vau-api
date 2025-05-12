@@ -60,6 +60,9 @@
 * [Teenus](ra-moodul/teenus/README.md)
   * [Testimine](ra-moodul/teenus/testimine.md)
   * [Teenuste sirvimine](ra-moodul/teenus/teenuste-sirvimine.md)
+* [Säilik](ra-moodul/sailik/README.md)
+  * [Testimine](ra-moodul/sailik/testimine.md)
+  * [Säiliku värskendamine](ra-moodul/sailik/sailiku-varskendamine.md)
 
 ## Abivahendid
 
