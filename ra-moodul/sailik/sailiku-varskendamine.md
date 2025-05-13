@@ -13,7 +13,7 @@ description: Päringu dokumentatsioon
 
 Märgib VAU andmebaasi, et säiliku andmeid on vaja uuendada, kuna neid on AIS-is muudetud.&#x20;
 
-Alati, kui AIS-is muudetakse säiliku pealkirja, hoidlat, riiulit, kappi või lauda, peab AIS saatma VAU-le selle lihtsa PUT-päringu. Päringu käigus pannakse säiliku leidandmete järgi VAU-s säiliku tabelis välja refresh\_required väärtuseks TRUE.
+Alati, kui AIS-is muudetakse säiliku pealkirja, hoidlat, riiulit, kappi või laudit, peab AIS saatma VAU-le selle lihtsa PUT-päringu. Päringu käigus pannakse säiliku leidandmete järgi VAU-s säiliku tabelis välja refresh\_required väärtuseks TRUE.
 
 VAU-s töötab eraldiseisev cron-töö, mis iga minuti järel kontrollib kõiki lipuga märgitud kirjeid, võtab AIS-ist uued andmed ja ajakohastab oma andmebaasi, seejärel eemaldab märgistuslipu.&#x20;
 
