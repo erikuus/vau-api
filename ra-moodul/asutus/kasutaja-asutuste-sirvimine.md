@@ -14,7 +14,7 @@ description: Päringu dokumentatsioon
 
 Väljastab kliendi kehtivad asutused kasutaja identifikaatori alusel.
 
-VAU-s on kirjeldatud kahte tüüpi asutusi – koostöölepinguga ja garantiikirjaga –, millega saab kliente siduda. Kui klient, kes on seotud mõne asutusega, vormistab tasulise teenuse (nt säilikutellimuse või arhiivipäringu), peab ta valima, kas tegutseb eraisikuna või asutuse nimel.&#x20;
+VAU-s on kirjeldatud kahte tüüpi asutusi – koostöölepinguga ja garantiikirjaga –, millega saab kliente siduda. Kui klient, kes on seotud mõne asutusega, vormistab tasulise tellimuse (nt säilikutellimuse või arhiivipäringu), peab ta valima, kas tegutseb eraisikuna või asutuse nimel.&#x20;
 
 <figure><img src="../../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
 
