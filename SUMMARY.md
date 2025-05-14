@@ -63,6 +63,9 @@
 * [Säilik](ra-moodul/sailik/README.md)
   * [Testimine](ra-moodul/sailik/testimine.md)
   * [Säiliku värskendamine](ra-moodul/sailik/sailiku-varskendamine.md)
+* [Asutus](ra-moodul/asutus/README.md)
+  * [Testimine](ra-moodul/asutus/testimine.md)
+  * [Asutuse vaatamine](ra-moodul/asutus/asutuse-vaatamine.md)
 
 ## Abivahendid
 

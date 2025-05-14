@@ -2,7 +2,7 @@
 description: Päringute dokumentatsioon
 ---
 
-# Säilik
+# Asutus
 
 ## Päringud
 
@@ -10,7 +10,6 @@ description: Päringute dokumentatsioon
 [testimine.md](testimine.md)
 {% endcontent-ref %}
 
-{% content-ref url="sailiku-varskendamine.md" %}
-[sailiku-varskendamine.md](sailiku-varskendamine.md)
+{% content-ref url="asutuse-vaatamine.md" %}
+[asutuse-vaatamine.md](asutuse-vaatamine.md)
 {% endcontent-ref %}
-
