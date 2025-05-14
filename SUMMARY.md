@@ -66,6 +66,7 @@
 * [Asutus](ra-moodul/asutus/README.md)
   * [Testimine](ra-moodul/asutus/testimine.md)
   * [Asutuse vaatamine](ra-moodul/asutus/asutuse-vaatamine.md)
+  * [Kasutaja asutuste sirvimine](ra-moodul/asutus/kasutaja-asutuste-sirvimine.md)
 
 ## Abivahendid
 

@@ -12,7 +12,7 @@ Kõigile API päringutele tuleb ühe parameetrina lisada ajutiselt kehtiv juurde
 {{apiBaseUrl}}/ska/application/view?token=71e0d98f1ab52c225d655359190b6844&id=16610
 ```
 
-kus _token_ on _"_71e0d98f1ab52c225d655359190b6844".
+kus _token_ on _"_&#x37;1e0d98f1ab52c225d655359190b6844".
 
 ## Kuidas seda saada?
 
