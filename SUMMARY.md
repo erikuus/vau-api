@@ -67,6 +67,9 @@
   * [Testimine](ra-moodul/asutus/testimine.md)
   * [Asutuse vaatamine](ra-moodul/asutus/asutuse-vaatamine.md)
   * [Kasutaja asutuste sirvimine](ra-moodul/asutus/kasutaja-asutuste-sirvimine.md)
+* [Meediateek](ra-moodul/meediateek/README.md)
+  * [Testimine](ra-moodul/meediateek/testimine.md)
+  * [Tellimuse loomine](ra-moodul/meediateek/tellimuse-loomine.md)
 
 ## Abivahendid
 
