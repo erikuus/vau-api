@@ -4,13 +4,13 @@ description: Päringu dokumentatsioon
 
 # Tellimuse loomine
 
-## <mark style="color:orange;">POST</mark> ska/application/create
+## <mark style="color:orange;">POST</mark> ra/meediateekOrder/create
 
 ```
-{{apiBaseUrl}}/ska/application/create?token={{accessToken}}
+{{apiBaseUrl}}/ra/meediateekOrder/create?token={{accessToken}}
 ```
 
-Loob uue taotluse ja tagastab selle identifikaatori.
+Loob uue Meediateegi tellimuse ja tagastab selle identifikaatori.
 
 ### Parameetrid (query params)
 
@@ -20,157 +20,145 @@ Loob uue taotluse ja tagastab selle identifikaatori.
 
 ### Sisend (body raw json)
 
-JSON peab sisaldama vähemalt taotluse objekti `Application`:
+JSON peab sisaldama tellimuse objekti `MeediateekOrder`:
 
 ```json
 {
-    "Application": {}
+  "MeediateekOrder": { /* … */ }
 }
 ```
 
-Kui taotlusele soovitakse lisada üks või mitu õppeastust ja/või töökohta, siis peab JSON sisaldama ka `Study` ja/või `Work` objekte:&#x20;
+Teenuseread tuleb lisada massiiv `MeediateekOrderRow`:&#x20;
 
 ```json
 {
-    "Application": {},
-    "Study": [{},{}],
-    "Work": [{},{}]    
+  "MeediateekOrder": { /* … */ },
+  "MeediateekOrderRow": [
+    { /* … */ },
+    { /* … */ }
+  ]
 }
 ```
 
-#### Application
+**MeediateekOrder**
 
 \*-ga märgitud on kohustuslikud
 
-<table><thead><tr><th width="267">NIMI</th><th width="153">TÜÜP (PIKKUS)</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>applicant_firstname *</td><td>String (64)</td><td>Taotleja eesnimi</td><td></td></tr><tr><td>applicant_lastname *</td><td>String (64)</td><td>Taotleja perekonnanimi</td><td></td></tr><tr><td>applicant_birthday *</td><td>Date</td><td>Taotleja sünnikuupäev<br><br><em>NB! Lubatud formaat on</em> <code>dd.MM.yyyy</code></td><td></td></tr><tr><td>applicant_address *</td><td>String (256)</td><td>Taotleja aadress</td><td></td></tr><tr><td>applicant_zip *</td><td>String (16)</td><td>Taotleja aadressi postiindeks</td><td></td></tr><tr><td>applicant_phone</td><td>String (64)</td><td>Taotleja telefoninumber</td><td></td></tr><tr><td>applicant_email</td><td>String (256)</td><td>Taotleja e-posti aadress<br><br><em>NB! Kohustuslik juhul, kui</em> <code>taxnotice_delivery_method</code> <em>või</em> <code>copy_delivery_method</code> <em>on määratud</em> <code>DELIVERY_EMAIL</code></td><td></td></tr><tr><td>applicant_id_nr</td><td>String(11)</td><td>Taotleja isikukood<br><br><em>NB! Veebirakenduse sisestusvormis isikukoodi ei ole, mistõttu seda pole ka seniste taotluste juures. Kuna Rahvusarhiivil on palju ka välismaiseid kliente, moodustatakse kliendikood nimest ja sünnikuupäevast. Isikukood on lisatud spetsiaalselt API jaoks ja seda saab kasutada otsingus.</em></td><td></td></tr><tr><td>applicant_names_info</td><td>String</td><td>Taotleja nimemuutused ja erinevad nimekujud õppimise/töötamise ajal</td><td></td></tr><tr><td>applicant_department_id</td><td>Integer</td><td>Üksuse identifikaator, juhul kui teatise tellijaks ja riigilõivu tasujaks ei ole isik, vaid üksus</td><td></td></tr><tr><td>study_comments</td><td>String</td><td>Märkused, täiendused õppimise kohta<br><br><em>NB! Selle välja väärtus salvestatakse ainult siis, kui on määratud vähemalt üks õppeasutus, st</em> <code>JSON</code><em>-is on vähemalt üks</em> <code>Study</code> <em>objekt.</em>  </td><td></td></tr><tr><td>work_pension_info</td><td>String</td><td>Õigus sooduspensionile, vajalike tingimuste kirjeldus<br><br><em>NB! Selle välja väärtus salvestatakse ainult siis, kui on määratud vähemalt üks töökoht, st</em> <code>JSON</code><em>-is on vähemalt üks</em> <code>Work</code> <em>objekt.</em></td><td></td></tr><tr><td>work_comments</td><td>String</td><td>Märkused, täiendused töötamise kohta<br><br><em>NB! Selle välja väärtus salvestatakse ainult siis, kui on määratud vähemalt üks töökoht, st</em> <code>JSON</code><em>-is on vähemalt üks</em> <code>Work</code> <em>objekt.</em></td><td></td></tr><tr><td>farm_info</td><td>String</td><td>Talus töötamine: maakond, vald, talu nimi, aeg</td><td></td></tr><tr><td>military_info</td><td>String</td><td>Sõjaväeteenistus: Eesti Kaitseväes teenimise puhul väeosa ja teenimise aeg, Saksa sõjaväes teenimise puhul kõik teadaolevad andmed</td><td></td></tr><tr><td>rear_info</td><td>String</td><td>Viibimine nõukogude tagalas: kellega koos tagalasse saadeti (andmed vanemate kohta) ja kõik muud teadaolevad andmed</td><td></td></tr><tr><td>prison_info</td><td>String</td><td>Vangilaagris ja asumisel viibimine: kellega koos laagrisse/asumisele saadeti (andmed vanemate kohta), millal ja kelle poolt karistatud, karistuse kandmise aeg ja koht, vabanemise aeg</td><td></td></tr><tr><td>work_camp_info</td><td>String</td><td>Töölaagris, koonduslaagris või sõjavangilaagris viibimine: laagri nimetus, kinnipidamise ja vabastamise aeg</td><td></td></tr><tr><td>ww2_estonia_info</td><td>String</td><td>II maailmasõja ajal Eestisse toomine: kellega koos toodi (andmed vanemate kohta), toomise aeg ja koht, laagrite nimed ja kinnipidamisaeg, kuhu suunati elama ja tööle</td><td></td></tr><tr><td>ww2_germany_info</td><td>String</td><td>II maailmasõja ajal Saksamaale saatmine: kellega koos saadeti (andmed vanemate kohta), kust ja millal saadeti, laagrite nimed, töökohad Saksamaal, Eestisse naasmise aeg ja koht</td><td></td></tr><tr><td>other_comments</td><td>String</td><td>Muud märkused ja täiendused taotluse kohta</td><td></td></tr><tr><td>taxnotice_delivery_method *</td><td>String</td><td>Valik: kas taotleja (isik) soovib arhiivilt teadet riigilõivu tasumise kohta tavapostiga või e-postiga<br><br><em>NB! Lubatud väärtused on:</em><br><code>DELIVERY_POSTAL</code> <em>või</em> <code>DELIVERY_EMAIL</code></td><td></td></tr><tr><td>copy_delivery_method</td><td>String</td><td>Valik: kas taotleja (isik) soovib koopiat arhiiviteatisest tavapostiga või e-postiga<br><br><em>NB! Lubatud väärtused on:</em><br><code>DELIVERY_POSTAL</code> <em>või</em> <code>DELIVERY_EMAIL</code></td><td></td></tr><tr><td>employee_id</td><td>Integer</td><td>Sotsiaalkindlustusameti töötaja, kes taotluse koostas/sisestas<br><br><em>NB! Töötaja identifikaatori saamise kohta vaata</em> <a data-mention href="../../ska-moodul/toeoetaja/toeoetaja-loomine.md">toeoetaja-loomine.md</a> <em>ja</em> <a data-mention href="../../ska-moodul/toeoetaja/toeoetaja-leidmine.md">toeoetaja-leidmine.md</a></td><td></td></tr><tr><td>department_id</td><td>Integer</td><td>Sotsiaalkindlustusameti üksus, kuhu arhiiviteatis edastatakse<br><br><em>NB! Üksuse identifikaatori saamise kohta vaata</em> <a data-mention href="../../ska-moodul/ueksus/ueksuse-loomine.md">ueksuse-loomine.md</a><em>ja</em> <a data-mention href="../../ska-moodul/ueksus/ueksuse-leidmine.md">ueksuse-leidmine.md</a></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="287.6171875">NIMI</th><th width="131.32421875">TÜÜP (PIKKUS)</th><th>SELGITUS</th></tr></thead><tbody><tr><td>client_vau_id *</td><td>Integer</td><td>Tellija VAU kasutajakonto identifikaator</td></tr><tr><td>client_comment</td><td>Text</td><td>Tellija märkused tellimuse kohta</td></tr><tr><td>client_company_id</td><td>Integer</td><td>Koostöölepingu või garantiikirjaga asutus</td></tr><tr><td>client_company_type</td><td>Integer</td><td><p>Esindatava asutuse tüüp <br></p><p><em>0 – Kõik asutused (v.a notar)</em></p><p><em>1 – Notar</em></p></td></tr><tr><td>client_company</td><td>String (256)</td><td>Esindatava asutuse nimi</td></tr><tr><td>client_company_nr</td><td>String (256)</td><td>Esindatava asutuse registrikood</td></tr><tr><td>client_company_email</td><td>String (256)</td><td>Esindatava asutuse e-post</td></tr><tr><td>client_company_address_street</td><td>String (256)</td><td>Tänav/maja</td></tr><tr><td>client_company_address_city</td><td>String (256)</td><td>Linn/vald</td></tr><tr><td>client_company_address_county</td><td>String (256)</td><td>Maakond</td></tr><tr><td>client_company_address_zip</td><td>String (16)</td><td>Postiindeks</td></tr><tr><td>order_type *</td><td>Integer</td><td><p>Tellimuse liik </p><p><br><em>1 - Laenutus</em></p><p><em>2- Siselaenutus</em></p><p><em>3 - Kauglaenutus</em></p><p><em>4 - Deponeerimine</em></p><p><em>5 - Koopia</em></p><p><em>6 - Virtuaalne tellimus</em></p></td></tr><tr><td>order_purpose_code *</td><td>Integer</td><td><p>Kasutuseesmärk<br><br><em>1 - Teadustöö</em></p><p><em>2 - Kodu-uurimine</em></p><p><em>3 - Genealoogia</em></p><p><em>4 - Õppetöö</em></p><p><em>5 - Õiguste tõestamine</em></p><p><em>6 - Muu</em></p><p><em>7 - Genealoogia/kodu-uurimine</em></p><p><em>8 - Teadustöö/kodu-uurimine</em></p><p><em>10 - Isiklikuks kasutuseks</em></p><p><em>11 - Publikatsioon</em></p><p><em>12 - Ajakirjandus</em></p><p><em>13 - Avalik üritus (tasuta)</em></p><p><em>14 - Avalik üritus (tasuline)</em></p><p><em>15 - Telefilm/telesaade</em></p><p><em>16 - Film</em></p><p><em>17 - Veeb</em></p><p><em>18 - Reklaam</em></p></td></tr><tr><td>order_purpose_comment</td><td>Text</td><td>Kasutuse täpsustus<br><br><em>Kohustuslik, kui kasutuseesmärk on 1, 4, 6, 11-18</em></td></tr></tbody></table>
 
-#### Study
-
-\*-ga märgitud on kohustuslikud
-
-<table><thead><tr><th width="174">NIMI</th><th width="155">TÜÜP (PIKKUS)</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>institution *</td><td>String (512)</td><td>Õppeasutuse nimetus</td><td></td></tr><tr><td>period *</td><td>String (512)</td><td>Õppimise aeg (kuupäevaliselt)</td><td></td></tr><tr><td>specialty</td><td>String (512)</td><td>Eriala</td><td></td></tr></tbody></table>
-
-#### Work
+#### MeediateekOrderRow
 
 \*-ga märgitud on kohustuslikud
 
-<table><thead><tr><th width="174">NIMI</th><th width="155">TÜÜP (PIKKUS)</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>institution *</td><td>String (512)</td><td>Asutuse nimetus</td><td></td></tr><tr><td>period *</td><td>String (512)</td><td>Töötamise aeg (kuupäevaliselt)</td><td></td></tr><tr><td>specialty *</td><td>String (512)</td><td>Eriala</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="211.86328125">NIMI</th><th width="154.77734375">TÜÜP</th><th>SELGITUS</th></tr></thead><tbody><tr><td>erply_product_code *</td><td>String (256)</td><td>Tootekood ERPLY majandustarkvaras</td></tr><tr><td>refcode *</td><td>String (256)</td><td>Kirjeldusüksuse leidandmed</td></tr><tr><td>amount *</td><td>Integer</td><td><p><em>Kogus</em> </p><p><br><em>- digikoopiate puhul 1</em> <br><em>- filmi/heli lõikude puhul sekundipõhine</em></p></td></tr><tr><td>online_copy_title</td><td>String (256)</td><td>Veebikoopia pealkiri <br><em>video/heli puhul</em></td></tr><tr><td>online_copy_filename</td><td>String (256)</td><td>Veebikoopia failinimi <br><em>video/heli puhul</em></td></tr><tr><td>time_from</td><td>String (16)</td><td>Ajakood, lõigu algus</td></tr><tr><td>time_to</td><td>String (16)</td><td>Ajakood, lõigu lõpp</td></tr></tbody></table>
 
 ### Päringu näide (cUrl)
 
 ```shell
-curl --location --request POST 'https://www.ra.ee/vau/index.php/api/ska/application/create?token=db9a1afb27d892ad3303095ce580f9cc' \
+curl --location 'https://www.ra.ee/vautest/index.php/api/ra/meediateekOrder/create?token=129f104682e2306339184f4ee59ea018' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "Application": {
-        "applicant_firstname": "Erik",
-        "applicant_lastname": "Uus",
-        "applicant_birthday": "30.07.1973",
-        "applicant_address": "Tammsaare 8-25",
-        "applicant_id_nr": "37307302715",
-        "applicant_zip": "51006",
-        "applicant_phone": "+37253225388",
-        "applicant_email": "erik.uus@gmail.com",
-        "applicant_names_info": "Uks, Uss",
-        "applicant_department_id": null,
-        "study_comments": "Märkused, täiendused",
-        "work_pension_info": "Õigus sooduspensionile, vajalike tingimuste kirjeldus",
-        "work_comments": "Märkused, täiendused",
-        "farm_info": "Maakond, vald, talu nimi, aeg",
-        "military_info": "Kirjeldus; Eesti Kaitseväes teenimise puhul märkida väeosa ja teenimise aeg, Saksa sõjaväes teenimise puhul kõik teadaolevad andmed",
-        "rear_info": "Kirjeldus; kellega koos tagalasse saadeti (andmed vanemate kohta) ja märkida kõik teadaolevad andmed",
-        "prison_info": "Kirjeldus; kellega koos laagrisse/asumisele saadeti (andmed vanemate kohta), millal ja kelle poolt karistatud, karistuse kandmise aeg ja koht, vabanemise aeg",
-        "work_camp_info": "Laagri nimetus, kinnipidamise ja vabastamise aeg",
-        "ww2_estonia_info": "Kirjeldus; kellega koos toodi (andmed vanemate kohta), toomise aeg ja koht, laagrite nimed ja kinnipidamisaeg, kuhu suunati elama ja tööle",
-        "ww2_germany_info": "Kirjeldus; kellega koos saadeti (andmed vanemate kohta), kust ja millal saadeti, laagrite nimed, töökohad Saksamaal, Eestisse naasmise aeg ja koht",
-        "other_comments": "Märkused, täiendused",
-        "taxnotice_delivery_method": "DELIVERY_EMAIL",
-        "copy_delivery_method": "DELIVERY_EMAIL",
-        "employee_id": null,
-        "department_id": null
+  "MeediateekOrder": {
+    "client_vau_id": 3,
+    "client_comment": "Testtellimus Postmani jaoks",
+    "client_company_id": null,
+    "client_company_type": 0,
+    "client_company": "Näidisettevõte OÜ",
+    "client_company_nr": "12345678",
+    "client_company_email": "info@naidisettevote.ee",
+    "client_company_address_street": "Näidisväli 12",
+    "client_company_address_city": "Tallinn",
+    "client_company_address_county": "Harju maakond",
+    "client_company_address_zip": "10123",
+    "order_type": 5,
+    "order_purpose_code": 6,
+    "order_purpose_comment": "Testimise eesmärgil"
+  },
+  "MeediateekOrderRow": [
+    {
+      "erply_product_code": "0122",
+      "refcode": "EAA.1414.1.272",
+      "amount": 1,
+      "online_copy_title": "Ateena akropoli foto",
+      "online_copy_filename": "eaa1414_001_0000272_00000_00001_f.jpg",
+      "time_from": "",
+      "time_to": ""
     },
-    "Study": [
-        {
-            "institution": "Nõo Keskkool",
-            "period": "1980 - 1991",
-            "specialty": ""
-        },
-        {
-            "institution": "Tartu Ülikool",
-            "period": "1991 - 1995",
-            "specialty": "usuteadus"
-        }
-    ],
-    "Work": [
-        {
-            "institution": "Rahvusarhiiv",
-            "period": "2006 - 2022",
-            "specialty": "programmeerija"
-        },
-        {
-            "institution": "Babahh OÜ",
-            "period": "2014 - 2018",
-            "specialty": "programmeerija"
-        }
-    ]
+    {
+      "erply_product_code": "1601",
+      "refcode": "EFA.203.f.2984",
+      "amount": 1,
+      "online_copy_title": "Tõravere",
+      "online_copy_filename": "efa0203_f_02984_est_00-0-02_00_p_a_HD_v_tk02_PRD.mp4",
+      "time_from": "00:01:00",
+      "time_to": "00:02:30"
+    }
+  ]
 }'
 ```
 
 ### Vastuse näide
 
-Taotluse loomine õnnestub ja tagastatakse loodud taotluse identifikaator.
+Tellimuse loomine õnnestub ja tagastatakse loodud tellimuse identifikaator.
 
 ```json
 {
     "responseStatus": "ok",
-    "applicationId": 16610
+    "orderId": 1
 }
 ```
 
 ### Veateated
 
-**error 3050** - taotlust ei saa luua, kuna sisendväärtused ei valideeru&#x20;
+**error 12050** - tellimust ei saa luua, kuna sisendväärtused ei valideeru&#x20;
 
 ```json
 {
     "responseStatus": "error",
-    "errorCode": 3050,
-    "errorMessage": "Could not create application",
+    "errorCode": 12050,
+    "errorMessage": "Could not create order",
     "errors": [
         {
-            "applicant_firstname": [
-                "Eesnimi ei tohi olla tühi."
+            "order_type": [
+                "Tellimuse liik ei tohi olla tühi."
             ],
-            "taxnotice_delivery_method": [
-                "Mittelubatud väärtus."
+            "order_purpose_code": [
+                "Kasutuseesmärk ei tohi olla tühi."
+            ]
+        },
+        {
+            "erply_product_code": [
+                "ERPLY tootekood ei tohi olla tühi."
             ],
-            "employee_id": [
-                "Töötaja peab olema arv."
-            ],
-            "department_id": [
-                "Üksus \"0\" ei eksisteeri."
+            "refcode": [
+                "Kirjeldusüksuse leidandmed ei tohi olla tühi."
+            ]
+        },
+        {
+            "amount": [
+                "Kogus peab olema arv."
             ]
         }
     ]
 }
 ```
 
-**error 3051** - päringu _raw body_ ei sisalda _JSON_ _stringi_ või selles puudub _Application_ objekt
+**error 12051** - päringu _raw body_ ei sisalda _JSON_ _stringi_ või selles puudub _MeediateekOrder_ objekt
 
 ```json
 {
     "responseStatus": "error",
-    "errorCode": 3051,
+    "errorCode": 12051,
     "errorMessage": "Request body is invalid or empty"
 }
 ```
 
-**error 3052** - vale meetod
+**error 12052** - vale meetod
 
 ```json
 {
     "responseStatus": "error",
-    "errorCode": 3052,
+    "errorCode": 12052,
     "errorMessage": "Is not POST request"
 }
 ```
