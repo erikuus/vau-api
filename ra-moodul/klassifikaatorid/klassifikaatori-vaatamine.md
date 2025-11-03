@@ -18,7 +18,7 @@ Väljastab klassifikaatori andmed koodi alusel.
 
 \*-ga märgitud on kohustuslikud
 
-<table><thead><tr><th width="123">NIMI</th><th width="106">TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr><tr><td>type *</td><td>String</td><td><p>Klassifikaatori tüüp</p><p></p><p>Võimalikud väärtused on: <code>purpose</code> või <code>measure_unit</code></p></td><td></td></tr><tr><td>code *</td><td>Integer</td><td>Klassifikaatori kood<br><br><em>Klassifikaatori koodi saamise kohta vaata</em> <a href="klassifikaatorite-sirvimine.md#vastuse-naeide"><em>siit</em></a></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="123">NIMI</th><th width="106">TÜÜP</th><th>SELGITUS</th><th data-hidden></th></tr></thead><tbody><tr><td>token *</td><td>String</td><td><a data-mention href="../../juurdepaeaesukood.md">juurdepaeaesukood.md</a></td><td></td></tr><tr><td>type *</td><td>String</td><td><p>Klassifikaatori tüüp</p><p></p><p>Võimalikud väärtused on: <code>purpose</code>, <code>purpose_meediateek</code>, <code>measure_unit</code></p></td><td></td></tr><tr><td>code *</td><td>Integer</td><td>Klassifikaatori kood<br><br><em>Klassifikaatori koodi saamise kohta vaata</em> <a href="klassifikaatorite-sirvimine.md#vastuse-naeide"><em>siit</em></a></td><td></td></tr></tbody></table>
 
 ### Päringu näide (cUrl)
 
