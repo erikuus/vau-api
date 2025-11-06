@@ -50,7 +50,7 @@ Riikide nimekirja väljastamine õnnestub.
     "countryListView": [
         {
             "id": 1,
-            "name_et": "Eesti",
+            "name_et": "Eesti Vabariik",
             "name_en": "Estonia",
             "short_name": "Eesti",
             "code_number": "233",
@@ -62,7 +62,7 @@ Riikide nimekirja väljastamine õnnestub.
         },
         {
             "id": 2,
-            "name_et": "Läti",
+            "name_et": "Läti Vabariik",
             "name_en": "Latvia",
             "short_name": "Läti",
             "code_number": "428",
@@ -74,7 +74,7 @@ Riikide nimekirja väljastamine õnnestub.
         },
         {
             "id": 3,
-            "name_et": "Leedu",
+            "name_et": "Leedu Vabariik",
             "name_en": "Lithuania",
             "short_name": "Leedu",
             "code_number": "440",
@@ -95,48 +95,4 @@ Mitte ühtegi riiki ei leitud (näiteks kui is_eu väärtus on vigane).
     "responseStatus": "ok",
     "countryListView": []
 }
-```
-
-### Postman test
-
-```javascript
-pm.test("Schema is valid", () => {
-    const schema = {
-        "type": "object",
-        "properties": {
-            "responseStatus": { "type": "string" },
-            "countryListView": {
-                "type": "array",
-                "items": {
-                    "properties": {
-                        "id": { "type": "integer" },
-                        "name_et": { "type": "string" },
-                        "name_en": { "type": "string" },
-                        "short_name": { "type": "string" },
-                        "code_number": { "type": "string" },
-                        "code": { "type": "string" },
-                        "code2": { "type": "string" },
-                        "latitude": { "type": "string" },
-                        "longitude": { "type": "string" },
-                        "is_eu": { "type": "boolean" }
-                    },
-                    "required": [
-                        "id",
-                        "name_et",
-                        "name_en",
-                        "short_name",
-                        "code_number",
-                        "code",
-                        "code2",
-                        "latitude",
-                        "longitude",
-                        "is_eu"
-                    ]
-                }                   
-            }                                
-        },                
-        "required": ["responseStatus", "countryListView"]
-    };    
-    pm.response.to.have.jsonSchema(schema);
-});
 ```
