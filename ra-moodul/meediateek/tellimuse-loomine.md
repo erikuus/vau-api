@@ -143,7 +143,7 @@ Tellimuse loomine õnnestub ja tagastatakse loodud tellimuse identifikaator.
 }
 ```
 
-**error 12051** - päringu _raw body_ ei sisalda _JSON_ _stringi_ või selles puudub _MeediateekOrder_ objekt
+**error 12051** - päringu _raw body_ ei sisalda _JSON_ _stringi,_ selles puudub _MeediateekOrder või MeediateekOrderRow_ objekt või _MeediateekOrderRow_ on tühi.
 
 ```json
 {
